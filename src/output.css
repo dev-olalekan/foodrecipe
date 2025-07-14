@@ -11,6 +11,7 @@
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-yellow-700: oklch(55.4% 0.135 66.442);
+    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
@@ -180,8 +181,8 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
-  .mr-12 {
-    margin-right: calc(var(--spacing) * 12);
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
   }
   .ml-12 {
     margin-left: calc(var(--spacing) * 12);
@@ -197,9 +198,6 @@
   }
   .resize {
     resize: both;
-  }
-  .items-center {
-    align-items: center;
   }
   .justify-center {
     justify-content: center;
@@ -224,9 +222,6 @@
   .bg-gray-400 {
     background-color: var(--color-gray-400);
   }
-  .bg-yellow-700 {
-    background-color: var(--color-yellow-700);
-  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -238,9 +233,6 @@
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
-  }
-  .font-mono {
-    font-family: var(--font-mono);
   }
   .font-serif {
     font-family: var(--font-serif);
@@ -270,6 +262,9 @@
   .text-gray-700 {
     color: var(--color-gray-700);
   }
+  .text-green-500 {
+    color: var(--color-green-500);
+  }
   .text-red-500 {
     color: var(--color-red-500);
   }
@@ -282,6 +277,21 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .sm\:text-green-500 {
+    @media (width >= 40rem) {
+      color: var(--color-green-500);
+    }
+  }
+  .sm\:text-red-500 {
+    @media (width >= 40rem) {
+      color: var(--color-red-500);
+    }
+  }
+  .md\:justify-end {
+    @media (width >= 48rem) {
+      justify-content: flex-end;
+    }
   }
 }
 @property --tw-border-style {
